@@ -51,21 +51,39 @@ docker-compose up --build
 employee-attendance-system/
 
 ├── backend/
+
 │   ├── app/
+
 │   │   ├── models/        # SQLAlchemy ORM models
+
 │   │   ├── schemas/       # Pydantic request/response schemas
+
 │   │   ├── crud/          # Database operations
+
 │   │   ├── api/routes/    # FastAPI route handlers
+
 │   │   ├── core/          # Security (hashing, JWT)
+
 │   │   ├── main.py        # App entry point
+
 │   │   ├── config.py      # Settings
+
 │   │   ├── database.py    # DB engine/session
+
 │   │   └── seed.py        # Seed script
+
 │   └── requirements.txt
+
 ├── frontend/
+
 │   └── src/
+
 │       ├── app/            # Pages (login, dashboard, employees, attendance)
+
 │       ├── components/     # Sidebar, Header, StatCard, DataTable
+
 │       ├── lib/             # API client, auth helpers
+
 │       └── types/          # Shared TypeScript types
+
 └── docker-compose.yml
